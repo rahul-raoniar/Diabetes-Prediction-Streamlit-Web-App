@@ -19,9 +19,9 @@ def load_data(data):
 def run_eda_app():
     st.success("Exploratory Data Analysis")
     #df = pd.read_csv("data/diabetes_data_upload.csv")
-    df = load_data("data/diabetes_data_upload.csv")
-    df_encoded = load_data("data/diabetes_data_upload_clean.csv")
-    freq_df = load_data("data/freqdist_of_age_data.csv")
+    df = load_data("diabetes_data_upload.csv")
+    df_encoded = load_data("diabetes_data_upload_clean.csv")
+    freq_df = load_data("freqdist_of_age_data.csv")
     
     
     submenu = st.sidebar.selectbox("Submenu", ["Descriptive", "Plots"])
